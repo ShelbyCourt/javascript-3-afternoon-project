@@ -22,7 +22,7 @@ var carDetails = {
 */
 
 //Code Here
-
+const {color, make, model, year} = carDetails
 
 
 ////////// PROBLEM 2 //////////
@@ -32,10 +32,15 @@ var carDetails = {
   Use object destructuring to save the object properties to new variables. 
   The property names are firstName, lastName, and title.
 */
+const object = {
+  title: 'El Jefe',
+  firstName: 'John',
+  lastName: 'Jacobs'
+}
 
-function greeting( obj ) {
+function greeting(object) {
   //Code Here
-  
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,6 +59,11 @@ function greeting( obj ) {
 */
 
 //Code Here
+function totalPopulation( obj ) {
+  const {utah, california, texas, arizona } = obj
+  const sum = utah + california + texas + arizona
+  return(totalPopulation)
+}
 
 
 
@@ -86,7 +96,9 @@ function greeting( obj ) {
 */
 
 //Code Here
+function largeNumbers ( {first, second, third}) {
 
+}
 
 
 ////////// PROBLEM 6 //////////
