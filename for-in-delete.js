@@ -53,12 +53,7 @@ for(var key in values) {
 */
 
 //Code Here
-function greaterThan10 = {
-  for (var prop in obj) {
-    if ( prop > 10 ){
-    obj[prop] = 0
-  }
-}
+
 
 ////////// PROBLEM 3 //////////
 
@@ -69,8 +64,11 @@ function greaterThan10 = {
 */
 
 //Code Here
-
-
+function double (object) {
+  object.map( function (object) {
+    return object * 2;
+  })
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -83,7 +81,10 @@ function greaterThan10 = {
 */
 
 //Code Here
+function secrets(object){
+  var string = ""
 
+}
 
 
 /* 
