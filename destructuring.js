@@ -22,8 +22,11 @@ var carDetails = {
 */
 
 //Code Here
-const {color, make, model, year} = carDetails
-
+var color = carDetails.color;
+var make = carDetails.make;
+var model = carDetails.model;
+var year = carDetails.year;
+console.log(color);
 ////////// PROBLEM 2 //////////
 
 /*
@@ -33,10 +36,7 @@ const {color, make, model, year} = carDetails
 */
 
   //Code Here
-  function greeting(object){
-    
-  }
-  
+
 
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -54,12 +54,12 @@ const {color, make, model, year} = carDetails
 */
 
 //Code Here
+
 function totalPopulation( obj ) {
   const {utah, california, texas, arizona } = obj
   const sum = utah + california + texas + arizona
   return(totalPopulation)
 }
-
 
 
 ////////// PROBLEM 4 //////////
@@ -73,9 +73,7 @@ function totalPopulation( obj ) {
 */
 
 //Code Here
-function ingredients('carb', 'fat', 'protein'){
 
-}
 
 
 ////////// PROBLEM 5 //////////
@@ -93,9 +91,6 @@ function ingredients('carb', 'fat', 'protein'){
 */
 
 //Code Here
-function largeNumbers ( {first, second, third}) {
-
-}
 
 
 ////////// PROBLEM 6 //////////

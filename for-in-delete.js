@@ -38,11 +38,23 @@ for(var key in values) {
 */
 
   //Code Here
-  var showValues = []
-
-  for ( var key in values) {
-    showValues.push(values[key])
+  
+  function showValues(arr){
+    let newStr = '';
+    for(var key in arr){
+      newStr = `${newStr}${arr[key]}`;
+    } 
+    return newStr;
   }
+
+//  function showValues(arr){
+//     let newStr = ' ';
+//     for (i = 0; i < arr.length; i++) {
+//       newStr = `${newStr} ${arr[i]}`
+//     }
+//     return newStr
+//   }
+
 
 ////////// PROBLEM 2 //////////
 
@@ -53,7 +65,14 @@ for(var key in values) {
 */
 
 //Code Here
-
+function greaterThan10(object){
+  for(var key in object){
+    if(object[key] > 10 ) {
+      object[key] = 0;
+    } 
+    return object[key];
+  }
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -65,9 +84,10 @@ for(var key in values) {
 
 //Code Here
 function double (object) {
-  object.map( function (object) {
-    return object * 2;
-  })
+  for(var key in object) {
+    object[key] * 2;
+  }
+  return object[key];
 }
 
 ////////// PROBLEM 4 //////////
@@ -81,10 +101,13 @@ function double (object) {
 */
 
 //Code Here
-function secrets(object){
-  var string = ""
 
-}
+// function secrets(object){
+//   var string = ""
+//   for(var key in object) {
+//     if ((object[0]) === 's' && (object[1]) === 'h')
+//   } 
+// }
 
 
 /* 
@@ -93,17 +116,17 @@ function secrets(object){
   Uncomment the example below to see a for in loop deleting all the properties inside an object.
 */
 
-// var deleteAllThethings = {
-//   one: 1,
-//   two: 2,
-//   three: 3
-// }
+var deleteAllThethings = {
+   one: 1,
+   two: 2,
+   three: 3
+ }
 
-// for(var key in deleteAllThethings) {
-//   delete deleteAllThethings[key]
-// }
+ for(var key in deleteAllThethings) {
+   delete deleteAllThethings[key]
+ }
 
-// console.log(deleteAllThethings)
+ console.log(deleteAllThethings)
 
 
 
@@ -115,8 +138,11 @@ function secrets(object){
 */
 
 //Code Here
-
-
+function removePassword(object) {
+  delete object[key]; {
+    return object;
+  }
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -134,6 +160,11 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
+for (var key in deleteTheBigNumbers) {
+  if (deleteTheBigNumbers[key] > 100) {
+    delete deleteTheBigNumbers[key];
+  }
+}
 
 
 
@@ -147,6 +178,8 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
+
+const startsWithK = object.filter(element => element[0] === 'k') 
 
 
 
@@ -162,5 +195,6 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
+
 
 
