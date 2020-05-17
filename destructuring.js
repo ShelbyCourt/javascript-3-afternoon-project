@@ -20,13 +20,11 @@ var carDetails = {
 /*
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
-
 //Code Here
-var color = carDetails.color;
-var make = carDetails.make;
-var model = carDetails.model;
-var year = carDetails.year;
-console.log(color);
+
+const {color, make, model, year} = carDetails;
+console.log(color)
+
 ////////// PROBLEM 2 //////////
 
 /*
@@ -36,71 +34,77 @@ console.log(color);
 */
 
   //Code Here
+  function greeting( { title, firstName, lastName } ) {
 
-
-  // Do not edit the code below.
-  return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
-  // Do not edit the code above.
-}
-
-////////// PROBLEM 3 //////////
-
-/*
-  Write a function called totalPopulation that will take in an object.
-  That object will have 4 properties named utah, california, texas and arizona.
-  The property values will be numbers.
-  Use object destructuring to save the property values to new variables.
-  Sum up the values and return the total number.
-*/
-
-//Code Here
-
-function totalPopulation( obj ) {
-  const {utah, california, texas, arizona } = obj
-  const sum = utah + california + texas + arizona
-  return(totalPopulation)
-}
-
-
-////////// PROBLEM 4 //////////
-
-/*
-  Write a function called ingredients that will take in an object. 
-  This object will have 3 properties named carb, fat, and protein. 
-  The property values will be strings. 
-  Use object destructuring to save the property values to new variables. 
-  Push these new variables to an array and return the array. 
-*/
-
-//Code Here
-
-
-
-////////// PROBLEM 5 //////////
-
-/*
-  Now we will use object destructuring as the function's parameter instead of destructuring the object inside of the function declaration.
-  Example:
-    function example( {one, two, three} ) {
-      return one + two + three
-    }
-
-  Write a function called largeNumbers that will take a destructured object as it's parameter.
-  The object properties will be named first, second, and third and their values will be numbers.
-  Find the smallest number of the three and return that number.
-*/
-
-//Code Here
-
-
-////////// PROBLEM 6 //////////
-
-/*
-  Write a function called numberGroups that will take a destructured object as it's parameter.
-  The object properties will be named a, b, and c and their values will be arrays of numbers.
-  Find the longest array and return that array.
-*/
-
-//Code Here
-
-
+    // Do not edit the code below.
+    return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
+    // Do not edit the code above.
+  }
+  
+  ////////// PROBLEM 3 //////////
+  
+  /*
+    Write a function called totalPopulation that will take in an object.
+    That object will have 4 properties named utah, california, texas and arizona.
+    The property values will be numbers.
+    Use object destructuring to save the property values to new variables.
+    Sum up the values and return the total number.
+  */
+  
+  //Code Here
+  
+  function totalPopulation( obj ) {
+    let {utah, california, texas, arizona } = obj;
+    sum = utah + california + texas + arizona;
+    return totalPopulation
+  }
+  
+  ////////// PROBLEM 4 //////////
+  
+  /*
+    Write a function called ingredients that will take in an object. 
+    This object will have 3 properties named carb, fat, and protein. 
+    The property values will be strings. 
+    Use object destructuring to save the property values to new variables. 
+    Push these new variables to an array and return the array. 
+  */
+  
+  //Code Here
+  function ingredients ( object ) {
+      let array = [];
+      let ( {carb, fat, protein} ) = object;
+      array.push(object);
+      return array;
+  
+  }
+  ////////// PROBLEM 5 //////////
+  
+  /*
+    Now we will use object destructuring as the function's parameter instead of destructuring the object inside of the function declaration.
+    Example:
+      function example( {one, two, three} ) {
+        return one + two + three
+      }
+  
+    Write a function called largeNumbers that will take a destructured object as it's parameter.
+    The object properties will be named first, second, and third and their values will be numbers.
+    Find the smallest number of the three and return that number.
+  */
+  
+  //Code Here
+  function largeNumbers ( { first, second, third} ) {
+  
+  }
+  
+  ////////// PROBLEM 6 //////////
+  
+  /*
+    Write a function called numberGroups that will take a destructured object as it's parameter.
+    The object properties will be named a, b, and c and their values will be arrays of numbers.
+    Find the longest array and return that array.
+  */
+  
+  //Code Here
+  
+  
+  

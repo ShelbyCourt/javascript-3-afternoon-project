@@ -51,7 +51,13 @@ var employees = [
 */
 
 //Code Here
-
+const employeeUpdater () {
+  for(let i=0; i=employees.length-1; i++)[
+    if((employees[prop]) === "Theo"){
+      
+    }
+  ]
+}
 
 ////////// PROBLEM 2 //////////
 
