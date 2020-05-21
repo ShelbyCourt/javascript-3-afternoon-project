@@ -105,6 +105,9 @@ console.log(color)
   */
   
   //Code Here
+  function numberGroups ({a, b, c}) {
+    
+  }
   
   
   

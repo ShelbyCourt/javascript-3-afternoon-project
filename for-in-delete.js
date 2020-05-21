@@ -102,12 +102,14 @@ function double (object) {
 
 //Code Here
 
-// function secrets(object){
-//   var string = ""
-//   for(var key in object) {
-//     if ((object[0]) === 's' && (object[1]) === 'h')
-//   } 
-// }
+function secrets(object){
+   var string = "";
+   for(var property in object) {
+     if ((object[0]) === 's' && (object[1]) === 'h');
+       return object 
+   } 
+ }
+
 
 
 /* 

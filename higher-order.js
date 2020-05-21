@@ -143,10 +143,3 @@ let bobsTotal = purchases.reduce(function (acc, purchase) {
     return acc;
   }
 }, 0);
-
-
-
-
-
-
-

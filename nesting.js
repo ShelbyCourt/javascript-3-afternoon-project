@@ -51,13 +51,15 @@ var employees = [
 */
 
 //Code Here
-const employeeUpdater () {
-  for(let i=0; i=employees.length-1; i++)[
-    if((employees[prop]) === "Theo"){
-      
-    }
-  ]
-}
+
+//const employeeUpdater () {
+//  for(let i=0; i=employees.length-1; i++){
+//    if((employees[prop]) === "Theo"){
+//      
+//    }
+//  }
+//}
+
 
 ////////// PROBLEM 2 //////////
 
@@ -74,8 +76,9 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
-
+function removeDuplicates(array) {
+  return array.filter((value, index) => array.indexOf(value) === index);
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -102,10 +105,9 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1];
 
-
+var fluffy2ndFriend =  cat.catFriends[1].name;
 
 ////////// PROBLEM 4 //////////
 
