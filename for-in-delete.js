@@ -67,10 +67,10 @@ for(var key in values) {
 //Code Here
 function greaterThan10(object){
   for(var key in object){
-    if(object[key] > 10 ) {
-      object[key] = 0;
+    if(object[key][property] > 10 ) {
+      for(let property in object[key][property] = 0);
     } 
-    return object[key];
+    return object;
   }
 }
 

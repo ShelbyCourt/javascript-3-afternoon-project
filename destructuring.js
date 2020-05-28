@@ -55,10 +55,11 @@ console.log(color)
   
   function totalPopulation( obj ) {
     let {utah, california, texas, arizona } = obj;
-    sum = utah + california + texas + arizona;
-    return totalPopulation
-  }
+    sum = (utah + california + texas + arizona);
+    return sum;
+    }
   
+
   ////////// PROBLEM 4 //////////
   
   /*
@@ -72,11 +73,10 @@ console.log(color)
   //Code Here
   function ingredients ( object ) {
       let array = [];
-      let ( {carb, fat, protein} ) = object;
-      array.push(object);
+      let {carb, fat, protein} = object;
+      array.push(object.property);
       return array;
-  
-  }
+    }
   ////////// PROBLEM 5 //////////
   
   /*
@@ -93,8 +93,8 @@ console.log(color)
   
   //Code Here
   function largeNumbers ( { first, second, third} ) {
-  
-  }
+    
+}
   
   ////////// PROBLEM 6 //////////
   
